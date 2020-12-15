@@ -7,4 +7,67 @@
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+/* Margins */
+/* Z-index */
+/* Body styles */
+body {
+  margin: 3rem 0 0 0;
+  font-size: 0.938rem;
+  color: #202020;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  position: relative;
+  font-size: 1.25rem;
+  color: blue;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: blue;
+}
 /*# sourceMappingURL=mainstyles.css.map */

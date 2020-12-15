@@ -7,3 +7,93 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+
+$header-height: 3rem;
+$font-semi: 500;
+$big-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$normal-font-size: 0.938rem;
+$first-color: blue;
+$second-color: #202020;
+
+@media screen and (min-width: 768px) {
+  $big-font-size: 3.5rem;
+  $h2-font-size: 2rem;
+  $normal-font-size: 1rem;
+}
+
+/* Margins */
+$mb-1: 0.5rem;
+$mb-2: 1rem;
+$mb-3: 1.5;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+/* Z-index */
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+/* Body styles */
+body {
+  margin: $header-height 0 0 0;
+  font-size: $normal-font-size;
+  color: $second-color;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  position: relative;
+  font-size: $h2-font-size;
+  color: $first-color;
+  margin-top: $mb-2;
+  margin-bottom: $mb-4;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: $first-color;
+}
